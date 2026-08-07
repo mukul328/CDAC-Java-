@@ -33,18 +33,19 @@ public void printReverse(int n){
 // The numbers should be added and the sum displayed. The loop should ask the user whether he or she wishes to perform the operation again. 
 // If so, the loop should repeat; otherwise it should terminate.(while loop)
 public void printAlog(){
-Scanner sc = new Scanner(System.in);
-boolean input;
-int num1 = sc.nextInt();
-int num2 = sc.nextInt();
-int sum =0;
- do{
-    sum = num1+ num2;
-    System.out.println(sum);
-    System.out.println("Enter the input if you wish to continue");
-    input = sc.nextBoolean();
- }
- while(input);
+    boolean input;
+    int sum = 0;
+    try (Scanner sc = new Scanner(System.in)) {
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+        do{
+            sum = num1 + num2;
+            System.out.println(sum);
+            System.out.println("Enter the input if you wish to continue");
+            input = sc.nextBoolean();
+        }
+        while(input);
+    }
 }
 
 // Q 5 Write a program to print out all Armstrong numbers between 1 and 500. 
