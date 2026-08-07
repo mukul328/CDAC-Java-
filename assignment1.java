@@ -2,18 +2,18 @@ import java.util.Scanner;
 
 public class assignment1 {
   
-  public static void main(String[] args) {git status
-// Q 1 Check whether a number entered by the user is even or odd.
-Scanner sc = new Scanner(System.in);
-System.out.println("Enter the num");
-int num = sc.nextInt();
+  public static void main(String[] args) {
+    // Q 1 Check whether a number entered by the user is even or odd.
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the num");
+    int num = sc.nextInt();
 
-if(num%2==0){
-    System.err.println("Even");
-}
-else{
-    System.err.println("Odd");
-}
+    if(num%2==0){
+        System.out.println("Even");
+    }
+    else{
+        System.out.println("Odd");
+    }
 
 
 
